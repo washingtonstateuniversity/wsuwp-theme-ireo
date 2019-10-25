@@ -18,6 +18,9 @@
 
     <description>Sniffs for PHP coding standards used by WSUWP Themes</description>
 
+    <exclude-pattern>node_modules/*</exclude-pattern>
+    <exclude-pattern>vendor/*</exclude-pattern>
+
     <rule ref="WordPress-Extra">
         <exclude name="WordPress.NamingConventions.ValidFunctionName" />
         <exclude name="WordPress.Files.FileName" />
