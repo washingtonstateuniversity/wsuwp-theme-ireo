@@ -21,9 +21,7 @@ module.exports = function( grunt ) {
 				map: true,
 				diff: false,
 				processors: [
-					require( "autoprefixer" )( {
-						browsers: [ "> 1%", "ie 8-11", "Firefox ESR" ]
-					} )
+					require( "autoprefixer" )( {} )
 				]
 			},
 			dist: {
