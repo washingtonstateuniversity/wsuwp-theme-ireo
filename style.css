@@ -8,12 +8,44 @@
  Version:        0.0.1
 */
 
+/**
+ * Custom Properties
+ * aka CSS variables.
+ *
+ * @link: https://developer.mozilla.org/en-US/docs/Web/CSS/--*
+ **/
+
+:root {
+	--global-font-color: #343434;
+	--global-font-family: "Montserrat", sans-serif;
+	--global-font-size: 18;
+	--global-font-line-height: 1.65;
+	--global-spacing: 3rem;
+
+	/* Font sizes */
+	--font-size-smaller: calc(.75 * var(--global-font-size) * 1em);
+	--font-size-small: calc(.88 * var(--global-font-size) * 1em);
+	--font-size-regular: calc(var(--global-font-size) / 16 * 1em);
+	--font-size-large: calc(1.5 * var(--global-font-size) * 1em);
+	--font-size-larger: calc(2.5 * var(--global-font-size) * 1em);
+
+	/* Colors */
+	--color-white: #fff;
+	--color-stone: #f2f2f2;
+	--color-gray-light: #d8d8d8;
+	--color-gray: #808080;
+	--color-gray-dark: #343434;
+	--color-crimson: #a60f2d;
+	--color-accent: #da1e00;
+}
+
 html {
 	background: #fff;
 }
 
 main {
 	border: 1px solid rgba(128, 128, 128, .1);
+	border-width: 0 1px;
 	margin: 0 50px 0 248px;
 	position: relative;
 }
