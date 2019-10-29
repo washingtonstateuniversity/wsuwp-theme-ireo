@@ -1,10 +1,35 @@
+/* Typography */
+h1 {
+	font-size: var(--font-size-larger);
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 300;
+	position: relative;
+}
+
+h2:before {
+	background: var(--color-crimson);
+	content: " ";
+	height: 1em;
+	margin-left: -2rem;
+	position: absolute;
+	width: 1rem;
+}
+
+/* Global elements */
 html {
 	background: #fff;
 }
 
 main {
 	border: 1px solid rgba(128, 128, 128, .1);
-	margin: 0 50px 0 248px;
+	border-width: 0 1px;
+	font-family: var(--global-font-family);
+	font-size: var(--font-size-body);
+	line-height: var(--global-font-line-height);
+	margin: 0 var(--global-spacing) 0 calc(var(--global-spacing) + 198px);
 	position: relative;
 }
 
