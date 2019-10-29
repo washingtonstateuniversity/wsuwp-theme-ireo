@@ -1,13 +1,3 @@
-/*
- Theme Name:     IREO Theme
- Theme URI:      https://ireo.wsu.edu
- Description:    A child theme for IREO
- Author:         Happy Prime
- Author URI:     https://happyprime.co
- Template:       spine
- Version:        0.0.1
-*/
-
 html {
 	background: #fff;
 }
@@ -47,8 +37,3 @@ main:after {
 #spine #glue:before {
 	border-right: 1px solid #868686;
 }
-
-main {
-	color: #000;
-}
-/*# sourceMappingURL=style.css.map */
