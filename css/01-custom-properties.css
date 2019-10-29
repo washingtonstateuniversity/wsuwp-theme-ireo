@@ -17,8 +17,8 @@
 	--font-size-smaller: calc(.75 * var(--base-font-size) * 1em);
 	--font-size-small: calc(.88 * var(--base-font-size) * 1em);
 	--font-size-regular: calc(var(--base-font-size) / 16 * 1em);
-	--font-size-large: calc(1.5 * var(--base-font-size) * 1em);
-	--font-size-larger: calc(2.5 * var(--base-font-size) * 1em);
+	--font-size-large: calc(27 / var(--base-font-size) * 1em);
+	--font-size-larger: calc(45 / var(--base-font-size) * 1em);
 
 	/* Colors */
 	--color-white: #fff;

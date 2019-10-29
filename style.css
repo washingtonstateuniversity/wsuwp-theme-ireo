@@ -27,8 +27,8 @@
 	--font-size-smaller: calc(.75 * var(--base-font-size) * 1em);
 	--font-size-small: calc(.88 * var(--base-font-size) * 1em);
 	--font-size-regular: calc(var(--base-font-size) / 16 * 1em);
-	--font-size-large: calc(1.5 * var(--base-font-size) * 1em);
-	--font-size-larger: calc(2.5 * var(--base-font-size) * 1em);
+	--font-size-large: calc(27 / var(--base-font-size) * 1em);
+	--font-size-larger: calc(45 / var(--base-font-size) * 1em);
 
 	/* Colors */
 	--color-white: #fff;
@@ -40,6 +40,27 @@
 	--color-accent: #da1e00;
 }
 
+/* Typography */
+h1 {
+	font-size: var(--font-size-larger);
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 300;
+	position: relative;
+}
+
+h2:before {
+	background: var(--color-crimson);
+	content: " ";
+	height: 1em;
+	margin-left: -2rem;
+	position: absolute;
+	width: 1rem;
+}
+
+/* Global elements */
 html {
 	background: #fff;
 }
@@ -50,7 +71,7 @@ main {
 	font-family: var(--global-font-family);
 	font-size: var(--font-size-body);
 	line-height: var(--global-font-line-height);
-	margin: 0 50px 0 248px;
+	margin: 0 var(--global-spacing) 0 calc(var(--global-spacing) + 198px);
 	position: relative;
 }
 
