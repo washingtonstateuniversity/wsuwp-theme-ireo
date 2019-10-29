@@ -42,6 +42,26 @@
 	--color-gray-transparent: rgba(128, 128, 128, .075);
 }
 
+/* Layout */
+#binder {
+	display: grid;
+	grid-template:
+		"nav main toolbar"
+		"nav footer toolbar"/ 198px 1fr var(--global-spacing);
+}
+
+#spine {
+	grid-area: nav;
+}
+
+main {
+	grid-area: main;
+}
+
+.toolbar {
+	grid-area: toolbar;
+}
+
 /* Typography */
 h1 {
 	font-size: var(--font-size-larger);
@@ -128,7 +148,7 @@ main {
 	font-family: var(--global-font-family);
 	font-size: var(--font-size-body);
 	line-height: var(--global-font-line-height);
-	margin: 0 var(--global-spacing) 0 calc(var(--global-spacing) + 198px);
+	margin: 0 0 0 var(--global-spacing);
 	position: relative;
 }
 
@@ -160,6 +180,61 @@ main:after {
 
 #spine #glue:before {
 	border-right: 1px solid var(--color-gray);
+}
+
+/* IREO toolbar */
+.toolbar {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	font-family: Montserrat, sans-serif;
+}
+
+.toolbar-links {
+	display: -ms-flexbox;
+	display: flex;
+	position: fixed;
+	top: -1rem;
+	right: 0;
+	-ms-transform: rotate(-90deg);
+	    transform: rotate(-90deg);
+	-ms-transform-origin: bottom right;
+	    transform-origin: bottom right;
+}
+
+/* needed to more easily position rotated text on the right */
+.tollbar-links-inner {
+	-ms-flex-align: center;
+	    align-items: center;
+	display: -ms-flexbox;
+	display: flex;
+	height: 3rem;
+	-ms-transform: rotate(180deg);
+	    transform: rotate(180deg);
+}
+
+.toolbar-links a {
+	text-decoration: none;
+}
+
+.site-mark {
+	border-right: 1px solid var(--color-gray);
+	font-weight: 900;
+	letter-spacing: .3em;
+	margin-right: 1rem;
+	padding-right: 1rem;
+}
+
+.toolbar-cougar-head {
+	position: fixed;
+	bottom: .5rem;
+}
+
+.toolbar-cougar-head a {
+	display: block;
+	text-align: center;
+	width: 3rem;
 }
 
 main {
