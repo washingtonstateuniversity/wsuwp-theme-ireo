@@ -73,8 +73,6 @@ $args = array(
 
 </main>
 
-<?php get_template_part( 'parts/content', 'toolbar' ); ?>
-
 <?php do_action( 'spine_theme_template_after_main', 'index.php' ); ?>
 <?php
 

@@ -54,8 +54,6 @@
 
 <?php wsuwp_spine_get_template_part( 'toolbar.php', 'parts/footers' ); ?>
 
-<?php get_template_part( 'parts/content', 'toolbar' ); ?>
-
 <?php do_action( 'spine_theme_template_after_main', 'page.php' ); ?>
 
 <?php get_footer();

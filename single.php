@@ -64,8 +64,6 @@ if ( function_exists( 'wsuwp_uc_get_object_type_slugs' ) && in_array( get_post_t
 
 </main><!--/#page-->
 
-<?php get_template_part( 'parts/content', 'toolbar' ); ?>
-
 <?php do_action( 'spine_theme_template_after_main', 'single.php' ); ?>
 
 <?php get_footer();
