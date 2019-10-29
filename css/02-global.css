@@ -6,6 +6,8 @@ h1 {
 h2 {
 	font-size: 2em;
 	font-weight: 300;
+	margin: 2em 0 1em;
+	padding: 0;
 	position: relative;
 }
 
@@ -18,13 +20,66 @@ h2:before {
 	width: 1rem;
 }
 
+h3 {
+	font-size: 1.3em;
+	margin: 2em 0 1em;
+	padding: 0;
+}
+
+h4 {
+	color: var(--color-crimson);
+	font-size: 1.1em;
+	font-weight: 400;
+	letter-spacing: .1em;
+	margin: 2em 0 1em;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+p,
+p ~ p {
+	margin: 1em 0;
+	padding-bottom: 0;
+	max-width: 80ch;
+}
+
+ul,
+ol {
+	margin: 1.25em 0 2em;
+	padding: 0 0 0 3em;
+	max-width: 70ch;
+}
+
+ol li,
+ul li {
+	line-height: var(--global-font-line-height);
+	margin: .5em 0;
+	padding: 0;
+}
+
+blockquote {
+	border-left: 1rem solid var(--color-stone);
+	color: var(--color-crimson);
+	font-family: var(--global-font-family);
+	font-size: 1.15em;
+	font-weight: 300;
+	margin: 2em 0;
+	padding: .1em 1em .5em;
+	max-width: 60ch;
+}
+
+blockquote cite {
+	color: var(--color-gray-dark);
+	font-size: .8em;
+}
+
 /* Global elements */
 html {
 	background: #fff;
 }
 
 main {
-	border: 1px solid rgba(128, 128, 128, .1);
+	border: 1px solid var(--color-gray-transparent);
 	border-width: 0 1px;
 	font-family: var(--global-font-family);
 	font-size: var(--font-size-body);
@@ -34,7 +89,7 @@ main {
 }
 
 main:before {
-	border: 1px solid rgba(128, 128, 128, .1);
+	border: 1px solid var(--color-gray-transparent);
 	border-width: 0 1px;
 	content: " ";
 	height: 100%;
@@ -47,7 +102,7 @@ main:before {
 }
 
 main:after {
-	background: rgba(128, 128, 128, .1);
+	background: var(--color-gray-transparent);
 	content: " ";
 	height: 100%;
 	position: absolute;
@@ -60,5 +115,5 @@ main:after {
 }
 
 #spine #glue:before {
-	border-right: 1px solid #868686;
+	border-right: 1px solid var(--color-gray);
 }
