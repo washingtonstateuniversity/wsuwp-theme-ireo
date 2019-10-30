@@ -70,6 +70,14 @@ main {
 /* Typography */
 h1 {
 	font-size: var(--font-size-larger);
+	margin-top: 3rem;
+}
+
+@media (min-width: 792px) {
+
+	h1 {
+		margin-top: 6rem;
+	}
 }
 
 h2 {
