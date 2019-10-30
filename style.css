@@ -45,9 +45,14 @@
 /* Layout */
 #binder {
 	display: grid;
-	grid-template:
-		"nav main toolbar"
-		"nav footer toolbar"/ 198px 1fr var(--global-spacing);
+	grid-template: "main toolbar"/ 1fr var(--global-spacing);
+}
+
+@media (min-width: 990px) {
+
+	#binder {
+		grid-template: "nav main toolbar"/ 198px 1fr var(--global-spacing);
+	}
 }
 
 #spine {
@@ -65,6 +70,14 @@ main {
 /* Typography */
 h1 {
 	font-size: var(--font-size-larger);
+	margin-top: 3rem;
+}
+
+@media (min-width: 792px) {
+
+	h1 {
+		margin-top: 6rem;
+	}
 }
 
 h2 {
@@ -179,7 +192,14 @@ main:after {
 }
 
 #spine #glue:before {
-	border-right: 1px solid var(--color-gray);
+	border-right: 5px solid var(--color-stone);
+}
+
+@media (max-width: 989px) {
+
+	.spine-header {
+		border-bottom: 3px solid var(--color-stone);
+	}
 }
 
 /* IREO toolbar */
@@ -195,12 +215,19 @@ main:after {
 	display: -ms-flexbox;
 	display: flex;
 	position: fixed;
-	top: -1rem;
+	top: 1.5rem;
 	right: 0;
 	-ms-transform: rotate(-90deg);
 	    transform: rotate(-90deg);
 	-ms-transform-origin: bottom right;
 	    transform-origin: bottom right;
+}
+
+@media (min-width: 990px) {
+
+	.toolbar-links {
+		top: -1rem;
+	}
 }
 
 /* needed to more easily position rotated text on the right */
@@ -235,6 +262,14 @@ main:after {
 	display: block;
 	text-align: center;
 	width: 3rem;
+}
+
+.wp-block-image .alignright {
+	margin-right: -2rem;
+}
+
+.wp-block-image .alignleft {
+	margin-left: -2rem;
 }
 
 main {
