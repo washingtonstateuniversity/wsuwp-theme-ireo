@@ -150,6 +150,28 @@ blockquote cite {
 	font-size: .8em;
 }
 
+a {
+	color: var(--color-crimson);
+	transition-duration: .3s;
+	transition-property: color, fill;
+	transition-timing-function: ease;
+}
+
+a:hover {
+	color: var(--color-accent);
+	text-decoration: none;
+}
+
+::-moz-selection {
+	background-color: var(--color-crimson-dark);
+	color: var(--color-white);
+}
+
+::selection {
+	background-color: var(--color-crimson-dark);
+	color: var(--color-white);
+}
+
 /* Global elements */
 html {
 	background: #fff;
@@ -262,6 +284,15 @@ main:after {
 	display: block;
 	text-align: center;
 	width: 3rem;
+}
+
+.toolbar-cougar-head a svg g {
+	fill: var(--color-gray-dark);
+	transition: fill .3s ease;
+}
+
+.toolbar-cougar-head a:hover svg g {
+	fill: var(--color-crimson);
 }
 
 /* Breadcrumbs */
