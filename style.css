@@ -204,6 +204,7 @@ main:before {
 	left: 25%;
 	visibility: visible;
 	width: 50%;
+	z-index: -1;
 }
 
 main:after {
@@ -283,6 +284,7 @@ main:after {
 
 .toolbar-cougar-head {
 	position: fixed;
+	right: 0;
 	bottom: .5rem;
 }
 
@@ -344,6 +346,14 @@ main:after {
 
 .has-featured-image .article-header {
 	width: 50%;
+}
+
+.article-title {
+	margin: 6rem 0 7rem;
+}
+
+.has-featured-image .article-title {
+	margin: 0;
 }
 
 .featured-image {
