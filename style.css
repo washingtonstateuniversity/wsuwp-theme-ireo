@@ -204,6 +204,7 @@ main:before {
 	left: 25%;
 	visibility: visible;
 	width: 50%;
+	z-index: -1;
 }
 
 main:after {
