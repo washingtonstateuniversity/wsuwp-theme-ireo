@@ -1,7 +1,7 @@
 .wp-block-image .alignright {
-	margin-right: -2rem;
+	margin: 1rem -2rem 1rem 2rem;
 }
 
 .wp-block-image .alignleft {
-	margin-left: -2rem;
+	margin: 1rem 2rem 1rem 0;
 }
