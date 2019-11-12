@@ -92,6 +92,7 @@ h2 {
 	margin: 2em 0 1em;
 	padding: 0;
 	position: relative;
+	max-width: 40ch;
 }
 
 h2:before {
@@ -107,6 +108,7 @@ h3 {
 	font-size: 1.3em;
 	margin: 2em 0 1em;
 	padding: 0;
+	max-width: 60ch;
 }
 
 h4 {
@@ -117,6 +119,7 @@ h4 {
 	margin: 2em 0 1em;
 	padding: 0;
 	text-transform: uppercase;
+	max-width: 74ch;
 }
 
 p,
