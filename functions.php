@@ -20,3 +20,9 @@ function ireo_toolbar( $template ) {
 }
 
 add_action( 'spine_theme_template_after_main', 'ireo_toolbar', 10 );
+
+/**
+ * Add align-wide and align-full support. 
+ * 'align-wide' adds support for both.
+ */
+add_theme_support( 'align-wide' );
