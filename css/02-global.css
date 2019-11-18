@@ -1,13 +1,13 @@
 /*** Layout ***/
 #binder {
 	display: grid;
-	grid-template: "main toolbar"/ 1fr var(--global-spacing);
+	grid-template: "main toolbar"/ 1fr calc(var(--global-spacing) * 1.5);
 }
 
 @media (min-width: 990px) {
 
 	#binder {
-		grid-template: "nav main toolbar"/ 198px 1fr var(--global-spacing);
+		grid-template: "nav main toolbar"/ 198px 1fr calc(var(--global-spacing) * 1.5);
 	}
 }
 
@@ -143,7 +143,7 @@ main {
 	font-family: var(--global-font-family);
 	font-size: var(--font-size-body);
 	line-height: var(--global-font-line-height);
-	margin: 0 0 0 var(--global-spacing);
+	margin: 0 0 0 calc(var(--global-spacing) * 1.5);
 	position: relative;
 }
 

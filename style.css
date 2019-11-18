@@ -20,7 +20,7 @@
 	--global-font-family: "Montserrat", sans-serif;
 	--base-font-size: 18;
 	--global-font-line-height: 1.65;
-	--global-spacing: 3rem;
+	--global-spacing: 2rem;
 
 	/* Font sizes */
 	--font-size-body: calc(var(--base-font-size) / 16 * 1em);
@@ -45,13 +45,13 @@
 /*** Layout ***/
 #binder {
 	display: grid;
-	grid-template: "main toolbar"/ 1fr var(--global-spacing);
+	grid-template: "main toolbar"/ 1fr calc(var(--global-spacing) * 1.5);
 }
 
 @media (min-width: 990px) {
 
 	#binder {
-		grid-template: "nav main toolbar"/ 198px 1fr var(--global-spacing);
+		grid-template: "nav main toolbar"/ 198px 1fr calc(var(--global-spacing) * 1.5);
 	}
 }
 
@@ -192,7 +192,7 @@ main {
 	font-family: var(--global-font-family);
 	font-size: var(--font-size-body);
 	line-height: var(--global-font-line-height);
-	margin: 0 0 0 var(--global-spacing);
+	margin: 0 0 0 calc(var(--global-spacing) * 1.5);
 	position: relative;
 }
 
@@ -375,6 +375,14 @@ main:after {
 
 .wp-block-image .alignleft {
 	margin: 1rem 2rem 1rem 0;
+}
+
+.alignfull {
+	margin: 0;
+}
+
+.align-wide {
+	margin: 0;
 }
 
 main {
