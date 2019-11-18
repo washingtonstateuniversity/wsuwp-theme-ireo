@@ -10,7 +10,7 @@
 	--global-font-family: "Montserrat", sans-serif;
 	--base-font-size: 18;
 	--global-font-line-height: 1.65;
-	--global-spacing: 3rem;
+	--global-spacing: 2rem;
 
 	/* Font sizes */
 	--font-size-body: calc(var(--base-font-size) / 16 * 1em);
