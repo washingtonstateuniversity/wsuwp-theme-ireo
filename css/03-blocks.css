@@ -5,3 +5,15 @@
 .wp-block-image .alignleft {
 	margin: 1rem 2rem 1rem 0;
 }
+
+.alignwide {
+	margin: var(--global-spacing) calc(var(--global-spacing) * -1);
+	width: calc(100% + calc(var(--global-spacing) * 2));
+	max-width: none;
+}
+
+.alignfull {
+	margin: var(--global-spacing) calc(var(--global-spacing) * -2.5);
+	width: calc(100% + (var(--global-spacing) * 2.5 * 2));
+	max-width: none;
+}

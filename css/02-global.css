@@ -140,6 +140,7 @@ html {
 main {
 	border: 1px solid var(--color-gray-transparent);
 	border-width: 0 1px;
+	color: var(--global-font-color);
 	font-family: var(--global-font-family);
 	font-size: var(--font-size-body);
 	line-height: var(--global-font-line-height);
@@ -179,6 +180,10 @@ main:after {
 }
 
 @media (max-width: 989px) {
+
+	#binder main {
+		margin-left: calc(var(--global-spacing) * 1.5);
+	}
 
 	.spine-header {
 		border-bottom: 3px solid var(--color-stone);
