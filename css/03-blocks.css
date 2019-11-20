@@ -1,9 +1,23 @@
+.wp-block-image img {
+	display: flex;
+}
+
 .wp-block-image .alignright {
 	margin: 1rem -2rem 1rem 2rem;
 }
 
 .wp-block-image .alignleft {
 	margin: 1rem 2rem 1rem 0;
+}
+
+.wp-block-image figcaption {
+	background: var(--color-gray-transparent);
+	color: var(--color-gray);
+	font-size: .8em;
+	font-weight: 300;
+	padding: calc(var(--global-spacing) / 2) calc(var(--global-spacing) / 2);
+	margin: 0;
+	text-align: center;
 }
 
 .alignwide {
