@@ -397,6 +397,10 @@ article header time:before {
 	margin: 1rem -2rem 1rem 2rem;
 }
 
+.wp-block-image .alignright img {
+	border-radius: 7px 0 0;
+}
+
 .wp-block-image .alignleft {
 	margin: 1rem 2rem 1rem 0;
 }
@@ -409,6 +413,10 @@ article header time:before {
 	padding: calc(var(--global-spacing) / 2) calc(var(--global-spacing) / 2);
 	margin: 0;
 	text-align: center;
+}
+
+.wp-block-image .alignright figcaption {
+	border-radius: 0 0 0 7px;
 }
 
 .alignwide {
