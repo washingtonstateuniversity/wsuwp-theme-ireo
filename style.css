@@ -92,7 +92,7 @@ h2 {
 	margin: 2em 0 1em;
 	padding: 0;
 	position: relative;
-	max-width: 40ch;
+	max-width: 38ch;
 }
 
 h2:before {
@@ -108,7 +108,7 @@ h3 {
 	font-size: 1.3em;
 	margin: 2em 0 1em;
 	padding: 0;
-	max-width: 60ch;
+	max-width: 56ch;
 }
 
 h4 {
@@ -119,21 +119,21 @@ h4 {
 	margin: 2em 0 1em;
 	padding: 0;
 	text-transform: uppercase;
-	max-width: 74ch;
+	max-width: 68ch;
 }
 
 p,
 p ~ p {
 	margin: 1em 0;
 	padding-bottom: 0;
-	max-width: 80ch;
+	max-width: 75ch;
 }
 
 main ul,
 main ol {
 	margin: 1.25em 0 2em;
 	padding: 0 0 0 3em;
-	max-width: 70ch;
+	max-width: 65ch;
 }
 
 main ol li,
@@ -388,12 +388,35 @@ article header time:before {
 	padding: 0 2rem;
 }
 
+.wp-block-image img {
+	display: -ms-flexbox;
+	display: flex;
+}
+
 .wp-block-image .alignright {
 	margin: 1rem -2rem 1rem 2rem;
 }
 
+.wp-block-image .alignright img {
+	border-radius: 7px 0 0;
+}
+
 .wp-block-image .alignleft {
 	margin: 1rem 2rem 1rem 0;
+}
+
+.wp-block-image figcaption {
+	background: var(--color-gray-transparent);
+	color: var(--color-gray);
+	font-size: .8em;
+	font-weight: 300;
+	padding: calc(var(--global-spacing) / 2) calc(var(--global-spacing) / 2);
+	margin: 0;
+	text-align: center;
+}
+
+.wp-block-image .alignright figcaption {
+	border-radius: 0 0 0 7px;
 }
 
 .alignwide {
