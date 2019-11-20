@@ -17,8 +17,8 @@
 	--font-size-smaller: calc(14 / var(--base-font-size) * 1em);
 	--font-size-small: calc(16 / var(--base-font-size) * 1em);
 	--font-size-regular: calc(var(--base-font-size) / 16 * 1em);
-	--font-size-large: calc(27 / var(--base-font-size) * 1em);
-	--font-size-larger: calc(45 / var(--base-font-size) * 1em);
+	--font-size-large: calc(26 / var(--base-font-size) * 1em);
+	--font-size-larger: calc(30 / var(--base-font-size) * 1em);
 
 	/* Colors */
 	--color-white: #fff;
@@ -30,4 +30,16 @@
 	--color-crimson-dark: #840c24;
 	--color-accent: #da1e00;
 	--color-gray-transparent: rgba(128, 128, 128, .075);
+}
+
+@media (min-width: 723px) {
+
+	:root {
+		--font-size-body: calc(var(--base-font-size) / 16 * 1em);
+		--font-size-smaller: calc(14 / var(--base-font-size) * 1em);
+		--font-size-small: calc(16 / var(--base-font-size) * 1em);
+		--font-size-regular: calc(var(--base-font-size) / 16 * 1em);
+		--font-size-large: calc(32 / var(--base-font-size) * 1em);
+		--font-size-larger: calc(45 / var(--base-font-size) * 1em);
+	}
 }
