@@ -168,7 +168,7 @@ blockquote cite {
 }
 
 a {
-	color: var(--color-crimson);
+	color: var(--color-crimson-dark);
 	transition-duration: .3s;
 	transition-property: color, fill;
 	transition-timing-function: ease;
@@ -177,6 +177,10 @@ a {
 a:hover {
 	color: var(--color-accent);
 	text-decoration: none;
+}
+
+a:focus {
+	outline: 4px double var(--color-accent);
 }
 
 ::-moz-selection {
