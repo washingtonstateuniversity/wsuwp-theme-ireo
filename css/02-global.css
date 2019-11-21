@@ -286,6 +286,10 @@ article header time {
 	margin-bottom: 5rem;
 }
 
+.home .header-wrap {
+	display: none;
+}
+
 .has-featured-image .header-wrap {
 	align-items: center;
 	display: flex;
