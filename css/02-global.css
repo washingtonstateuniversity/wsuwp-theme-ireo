@@ -123,7 +123,7 @@ a:hover {
 	text-decoration: none;
 }
 
-a:focus {
+main a:focus {
 	outline: 4px double var(--color-accent);
 }
 
@@ -339,8 +339,40 @@ article header time:before {
 	}
 }
 
+.archive .header-wrap {
+	margin-bottom: 0;
+}
+
+.archive .article-header hgroup {
+	margin: 6rem 0 2rem;
+}
+
 /*** Entry content ***/
 .entry-content,
 .article-body {
 	padding: 0 2rem;
+}
+
+/*** Article footer ***/
+.article-footer {
+	border-top: 5px solid var(--color-stone);
+	margin: 3rem 0 0;
+	padding: var(--global-spacing);
+}
+
+/*** Archive ***/
+.archive h2 {
+	font-weight: 900;
+}
+
+.archive h2:before {
+	display: none;
+}
+
+.archive .article-summary img {
+	display: none;
+}
+
+.archive .article-footer {
+	padding: var(--global-spacing) 0;
 }
