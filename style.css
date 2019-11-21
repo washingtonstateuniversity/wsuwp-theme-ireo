@@ -97,6 +97,7 @@ h2 {
 	font-size: var(--font-size-large);
 	font-weight: 300;
 	margin: 2em 0 1em;
+	line-height: 1.3;
 	padding: 0;
 	position: relative;
 	max-width: 38ch;
@@ -105,7 +106,7 @@ h2 {
 h2:before {
 	background: var(--color-crimson);
 	content: " ";
-	height: 1em;
+	height: 1.3em;
 	margin-left: -2rem;
 	position: absolute;
 	width: 1rem;
@@ -167,7 +168,7 @@ blockquote cite {
 }
 
 a {
-	color: var(--color-crimson);
+	color: var(--color-crimson-dark);
 	transition-duration: .3s;
 	transition-property: color, fill;
 	transition-timing-function: ease;
@@ -176,6 +177,10 @@ a {
 a:hover {
 	color: var(--color-accent);
 	text-decoration: none;
+}
+
+main a:focus {
+	outline: 4px double var(--color-accent);
 }
 
 ::-moz-selection {
@@ -406,10 +411,42 @@ article header time:before {
 	}
 }
 
+.archive .header-wrap {
+	margin-bottom: 0;
+}
+
+.archive .article-header hgroup {
+	margin: 6rem 0 2rem;
+}
+
 /*** Entry content ***/
 .entry-content,
 .article-body {
 	padding: 0 2rem;
+}
+
+/*** Article footer ***/
+.article-footer {
+	border-top: 5px solid var(--color-stone);
+	margin: 3rem 0 0;
+	padding: var(--global-spacing);
+}
+
+/*** Archive ***/
+.archive h2 {
+	font-weight: 900;
+}
+
+.archive h2:before {
+	display: none;
+}
+
+.archive .article-summary img {
+	display: none;
+}
+
+.archive .article-footer {
+	padding: var(--global-spacing) 0;
 }
 
 .wp-block-image img {
