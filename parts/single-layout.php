@@ -1,5 +1,7 @@
-<?php while ( have_posts() ) : the_post(); ?>
+<?php
 
-	<?php get_template_part( 'articles/post', get_post_type() ) ?>
+while ( have_posts() ) : the_post();
 
-<?php endwhile; ?>
+	get_template_part( 'articles/post', get_post_type() );
+
+endwhile;
