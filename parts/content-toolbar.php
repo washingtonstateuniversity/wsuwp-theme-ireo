@@ -1,3 +1,7 @@
+<?php
+// Displays the IREO toolbar part.
+
+?>
 <div class="toolbar">
 	<div class="toolbar-links">
 		<div class="tollbar-links-inner">
