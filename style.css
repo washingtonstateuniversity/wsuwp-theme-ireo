@@ -183,11 +183,6 @@ main a:focus {
 	outline: 4px double var(--color-accent);
 }
 
-::-moz-selection {
-	background-color: var(--color-crimson-dark);
-	color: var(--color-white);
-}
-
 ::selection {
 	background-color: var(--color-crimson-dark);
 	color: var(--color-white);
