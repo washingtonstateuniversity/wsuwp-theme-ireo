@@ -26,7 +26,7 @@
 			</hgroup>
 
 			<?php
-			if ( is_singular() && in_array( $post_share_placement, array( 'top', 'both' ) ) ) {
+			if ( is_singular() && in_array( $post_share_placement, array( 'top', 'both' ), true ) ) {
 				get_template_part( 'parts/share-tools' );
 			}
 			?>
@@ -82,7 +82,7 @@
 
 	<footer class="article-footer">
 		<?php
-		if ( is_singular() && in_array( $post_share_placement, array( 'bottom', 'both' ) ) ) {
+		if ( is_singular() && in_array( $post_share_placement, array( 'bottom', 'both' ), true ) ) {
 			get_template_part( 'parts/share-tools' );
 		}
 		?>
