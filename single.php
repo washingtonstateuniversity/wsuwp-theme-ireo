@@ -24,7 +24,7 @@ if ( spine_has_background_image() ) {
 
 <?php
 
-if ( function_exists( 'wsuwp_uc_get_object_type_slugs' ) && in_array( get_post_type(), wsuwp_uc_get_object_type_slugs() ) ) {
+if ( function_exists( 'wsuwp_uc_get_object_type_slugs' ) && in_array( get_post_type(), wsuwp_uc_get_object_type_slugs(), true ) ) {
 	if ( 'wsuwp_uc_person' === get_post_type() ) {
 		wsuwp_spine_get_template_part( 'single.php', 'parts/single-layout', 'wsuwp_uc_person' );
 	} else {
