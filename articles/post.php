@@ -106,7 +106,7 @@
 			echo '<dl class="university-categorized">';
 			echo '<dt><span class="university-categorized-default">Categorized</span></dt>';
 
-			foreach ( $university_category_terms as $term ) {
+			foreach ( $university_category_terms as $term ) { // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 				$term_link = get_term_link( $term->term_id, 'wsuwp_university_category' );
 				if ( ! is_wp_error( $term_link ) ) {
 					echo '<dd><a href="' . esc_url( $term_link ) . '">' . esc_html( $term->name ) . '</a></dd>';
@@ -120,7 +120,7 @@
 	if ( has_tag() ) {
 		echo '<dl class="tagged">';
 		echo '<dt><span class="tagged-default">Tagged</span></dt>';
-		foreach ( get_the_tags() as $tag ) {
+		foreach ( get_the_tags() as $tag ) { // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 			echo '<dd><a href="' . get_tag_link( $tag->term_id ) . '">' . esc_html( $tag->name ) . '</a></dd>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 		echo '</dl>';
@@ -133,7 +133,7 @@
 			echo '<dl class="university-location">';
 			echo '<dt><span class="university-location-default">Location</span></dt>';
 
-			foreach ( $university_location_terms as $term ) {
+			foreach ( $university_location_terms as $term ) { // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 				$term_link = get_term_link( $term->term_id, 'wsuwp_university_location' );
 				if ( ! is_wp_error( $term_link ) ) {
 					echo '<dd><a href="' . esc_url( $term_link ) . '">' . esc_html( $term->name ) . '</a></dd>';
