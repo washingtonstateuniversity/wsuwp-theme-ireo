@@ -32,5 +32,5 @@ add_action( 'wp_enqueue_scripts', 'ireo_enqueue_styles' );
  */
 function ireo_enqueue_styles() {
 	// Add Google Font Montserrat.
-	wp_enqueue_style( 'montserrat', '//fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,900,900i&display=swap', true );
+	wp_enqueue_style( 'montserrat', '//fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,900,900i&display=swap', true ); // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion
 }
