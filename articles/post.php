@@ -72,10 +72,12 @@
 		<div class="article-body">
 			<?php the_content(); ?>
 			<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'spine' ),
-				'after' => '</div>',
-			) );
+			wp_link_pages(
+				array(
+					'before' => '<div class="page-links">' . __( 'Pages:', 'spine' ),
+					'after' => '</div>',
+				)
+			);
 			?>
 		</div>
 	<?php endif; ?>
