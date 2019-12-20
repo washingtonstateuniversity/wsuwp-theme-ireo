@@ -5,6 +5,8 @@
  * the provided actions and filters.
  */
 
+require_once 'blocks/index.php'; // Include custom blocks.
+
 add_filter( 'spine_child_theme_version', 'ireo_theme_version' );
 /**
  * @since 0.0.1
