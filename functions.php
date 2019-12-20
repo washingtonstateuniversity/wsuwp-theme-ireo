@@ -5,6 +5,16 @@
  * the provided actions and filters.
  */
 
+add_filter( 'spine_child_theme_version', 'ireo_theme_version' );
+/**
+ * @since 0.0.1
+ *
+ * @var string String used for busting cache on scripts.
+ */
+function ireo_theme_version() {
+	return '0.0.1';
+}
+
 add_action( 'spine_theme_template_after_main', 'ireo_toolbar', 10 );
 /**
  * Add toolbar markup to the spine_theme_template_after_main hook
