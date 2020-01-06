@@ -129,3 +129,8 @@
 	font-weight: 300;
 	text-decoration: none;
 }
+
+/*** Scrolling Sections ***/
+.wp-block-happyprime-scrolling-sections.alignfull {
+	margin-top: 0;
+}

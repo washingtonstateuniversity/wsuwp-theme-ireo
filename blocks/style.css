@@ -10,8 +10,10 @@
 	width: 100vw;
 }
 
-.wp-block-happyprime-scrolling-sections.alignfull {
-	margin-top: 0;
+.admin-bar .wp-block-happyprime-scrolling-sections,
+.admin-bar .wp-block-happyprime-scrolling-sections.alignfull {
+	margin-top: -32px;
+	padding-top: 32px;
 }
 
 .wp-block-happyprime-scrolling-sections > div {
@@ -24,10 +26,5 @@
 	height: 100vh;
 	position: relative;
 	width: 100%;
-}
-
-.admin-bar .wp-block-happyprime-scrolling-sections {
-	margin-top: -32px;
-	padding-top: 32px;
 }
 /*# sourceMappingURL=style.css.map */
