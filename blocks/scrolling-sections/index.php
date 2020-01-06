@@ -22,7 +22,7 @@ function enqueue_block_assets() {
 	wp_register_script(
 		'wheel-indicator',
 		get_stylesheet_directory_uri() . '/blocks/scrolling-sections/wheel-indicator.js',
-		array( 'wp-blocks', 'wp-element' ),
+		array(),
 		ireo_theme_version(),
 		true
 	);
