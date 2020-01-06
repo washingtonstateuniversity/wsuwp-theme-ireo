@@ -139,10 +139,13 @@
 	margin-top: -32px;
 }
 
-.spine-mobile #binder .wp-block-happyprime-scrolling-sections {
-	margin-top: -50px;
-}
+@media (max-width: 989px) {
 
-.spine-mobile #binder .wp-block-happyprime-scrolling-sections article {
-	padding-top: 50px;
+	#binder .wp-block-happyprime-scrolling-sections {
+		margin-top: -50px;
+	}
+
+	#binder .wp-block-happyprime-scrolling-sections article {
+		padding-top: 50px;
+	}
 }
