@@ -20,8 +20,14 @@
 
 .wp-block-happyprime-scrolling-sections article,
 .wp-block-happyprime-scrolling-sections article > div {
+	display: inline-block;
 	height: 100vh;
 	position: relative;
 	width: 100%;
+}
+
+.admin-bar .wp-block-happyprime-scrolling-sections {
+	margin-top: -32px;
+	padding-top: 32px;
 }
 /*# sourceMappingURL=style.css.map */
