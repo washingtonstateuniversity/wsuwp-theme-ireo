@@ -14,10 +14,14 @@
 	transition-property: transform;
 }
 
-.wp-block-happyprime-scrolling-sections article,
+.wp-block-happyprime-scrolling-sections article {
+	height: 100vh;
+	width: 100%;
+}
+
 .wp-block-happyprime-scrolling-sections article > div {
 	display: inline-block;
-	height: 100vh;
+	height: 100%;
 	position: relative;
 	width: 100%;
 }
