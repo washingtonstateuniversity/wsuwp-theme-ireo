@@ -29,9 +29,7 @@ registerBlockType( 'happyprime/scrolling-section', {
 	edit: () => {
 		return (
 			<article>
-				<div>
-					<InnerBlocks />
-				</div>
+				<InnerBlocks />
 			</article>
 		);
 	},
@@ -39,9 +37,7 @@ registerBlockType( 'happyprime/scrolling-section', {
 	save: () => {
 		return (
 			<article>
-				<div>
-					<InnerBlocks.Content />
-				</div>
+				<InnerBlocks.Content />
 			</article>
 		);
 	},

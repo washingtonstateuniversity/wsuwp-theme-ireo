@@ -1,13 +1,13 @@
-.scroll-lock {
-	height: 100vh;
-	overflow: hidden;
-}
-
 .wp-block-happyprime-scrolling-sections {
 	margin: 0;
 	overflow: hidden;
 	position: relative;
 	width: 100vw;
+}
+
+.js-scrolling-sections {
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
 }
 
 .wp-block-happyprime-scrolling-sections > div {
@@ -16,12 +16,8 @@
 
 .wp-block-happyprime-scrolling-sections article {
 	height: 100vh;
-	width: 100%;
-}
-
-.wp-block-happyprime-scrolling-sections article > div {
-	display: inline-block;
-	height: 100%;
+	height: calc(var(--vh, 1vh) * 100);
+	overflow: hidden;
 	position: relative;
 	width: 100%;
 }
