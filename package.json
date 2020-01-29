@@ -6,9 +6,9 @@
     "url": "https://github.com/washingtonstateuniversity/wsuwp-spine-child-theme-skeleton"
   },
   "devDependencies": {
+    "@wordpress/scripts": "^3.4.0",
     "autoprefixer": "^9.7.3",
     "grunt": "~1.0.4",
-    "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-concat": "~1.0.1",
     "grunt-contrib-connect": "^2.1.0",
     "grunt-contrib-cssmin": "~3.0.0",
@@ -17,7 +17,11 @@
     "grunt-jscs": "^3.0.1",
     "grunt-phpcs": "^0.4.0",
     "grunt-postcss": "^0.9.0",
+    "grunt-run": "^0.8.1",
     "grunt-stylelint": "^0.12.0",
     "stylelint": "^12.0.0"
+  },
+  "scripts": {
+    "build:custom": "wp-scripts build blocks/**/index.js --output=blocks/index.js"
   }
 }

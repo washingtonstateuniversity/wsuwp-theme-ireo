@@ -581,6 +581,27 @@ article header time:before {
 	text-decoration: none;
 }
 
+/*** Scrolling Sections ***/
+.wp-block-happyprime-scrolling-sections.alignfull {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.admin-bar .wp-block-happyprime-scrolling-sections.alignfull {
+	margin-top: -32px;
+}
+
+@media (max-width: 989px) {
+
+	#binder .wp-block-happyprime-scrolling-sections {
+		margin-top: -50px;
+	}
+
+	#binder .wp-block-happyprime-scrolling-sections article {
+		padding-top: 50px;
+	}
+}
+
 main {
 	color: #000;
 }

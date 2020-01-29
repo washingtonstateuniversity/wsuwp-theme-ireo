@@ -1,0 +1,1 @@
+{"version":3,"sources":["scrolling-sections/editor.css"],"names":[],"mappings":"AAAA;CACC,cAAc;CACd","file":"editor.css","sourcesContent":["div[data-type=\"happyprime/scrolling-section\"] {\n\theight: 100vh;\n}\n"]}

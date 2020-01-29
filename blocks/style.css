@@ -1,0 +1,43 @@
+.wp-block-happyprime-scrolling-sections {
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	width: 100vw;
+}
+
+.js-scrolling-sections {
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
+}
+
+.wp-block-happyprime-scrolling-sections > div {
+	transition-property: transform;
+}
+
+.wp-block-happyprime-scrolling-sections article {
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.admin-bar .wp-block-happyprime-scrolling-sections {
+	margin-top: -32px;
+}
+
+.admin-bar .wp-block-happyprime-scrolling-sections article {
+	padding-top: 32px;
+}
+
+@media (max-width: 782px) {
+
+	.admin-bar .wp-block-happyprime-scrolling-sections {
+		margin-top: -46px;
+	}
+
+	.admin-bar .wp-block-happyprime-scrolling-sections article {
+		padding-top: 46px;
+	}
+}
+/*# sourceMappingURL=style.css.map */
